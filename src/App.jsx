@@ -110,7 +110,7 @@ function WorkCard({ work, index }) {
       <div
         style={{
           background: C.cream,
-          padding: isWide ? "20px 20px 12px" : "16px 16px 10px",
+          padding: isWide ? "20px" : "16px",
           boxShadow: hovered
             ? `0 8px 32px rgba(0,0,0,0.5), 0 0 0 1px ${work.accent}22`
             : "0 4px 20px rgba(0,0,0,0.4)",
@@ -139,30 +139,48 @@ function WorkCard({ work, index }) {
             }}
           />
         </div>
-        {/* Info below image */}
-        <div style={{ paddingTop: 10 }}>
+      </div>
+      {/* Info below card */}
+      <div style={{ paddingTop: 16 }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "baseline",
+          }}
+        >
           <div
             style={{
-              fontSize: 11,
+              fontSize: 18,
               fontWeight: 400,
-              letterSpacing: 2,
+              letterSpacing: 3,
               textTransform: "uppercase",
-              color: "#1a1a1a",
+              color: C.cream,
             }}
           >
             {work.title}
           </div>
           <div
             style={{
-              fontSize: 10,
+              fontSize: 13,
               fontWeight: 300,
-              letterSpacing: 1,
-              color: "#666",
-              marginTop: 2,
+              letterSpacing: 2,
+              color: C.mid,
             }}
           >
-            {work.year} · {work.medium} · {work.size}
+            {work.year}
           </div>
+        </div>
+        <div
+          style={{
+            fontSize: 12,
+            fontWeight: 300,
+            letterSpacing: 1,
+            color: C.mid,
+            marginTop: 4,
+          }}
+        >
+          {work.medium} · {work.size}
         </div>
       </div>
     </div>
@@ -249,22 +267,22 @@ function Footer() {
               fontWeight: 300,
               letterSpacing: 2,
               textTransform: "uppercase",
-              color: "#bbb",
+              color: "#ddd",
               transition: "color 0.3s ease",
               padding: "8px 0",
             }}
             onMouseEnter={(e) => (e.currentTarget.style.color = C.gold)}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#bbb")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "#ddd")}
           >
             {link.label}
           </a>
         ))}
       </div>
       <div style={{ textAlign: "center" }}>
-        <div style={{ fontSize: 11, fontWeight: 300, color: "#bbb", letterSpacing: 1 }}>
+        <div style={{ fontSize: 11, fontWeight: 300, color: "#ddd", letterSpacing: 1 }}>
           Amsterdam, The Netherlands
         </div>
-        <div style={{ fontSize: 10, fontWeight: 300, letterSpacing: 2, color: "#999", marginTop: 8 }}>
+        <div style={{ fontSize: 10, fontWeight: 300, letterSpacing: 2, color: "#bbb", marginTop: 8 }}>
           © 2026 Robbertsen Art
         </div>
       </div>
@@ -311,7 +329,7 @@ function Home() {
           src="/images/Robbertsen.art_beeldmerk_wit.png"
           alt="Robbertsen Art"
           style={{
-            height: 80,
+            height: 140,
             marginBottom: 32,
             opacity: loaded ? 1 : 0,
             transition: "opacity 1.2s ease 0.2s",
@@ -328,7 +346,7 @@ function Home() {
           />
           <span
             style={{
-              fontSize: 10,
+              fontSize: 12,
               fontWeight: 300,
               letterSpacing: 4,
               textTransform: "uppercase",
@@ -358,7 +376,7 @@ function Home() {
           padding: "0 24px 60px",
           display: "grid",
           gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
-          gap: 24,
+          gap: 48,
         }}
       >
         {WORKS.map((work, i) => (
