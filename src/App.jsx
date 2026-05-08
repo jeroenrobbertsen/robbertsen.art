@@ -173,10 +173,10 @@ function WorkCard({ work, index }) {
         </div>
         <div
           style={{
-            fontSize: 12,
-            fontWeight: 300,
+            fontSize: 13,
+            fontWeight: 400,
             letterSpacing: 1,
-            color: C.mid,
+            color: "#bbb",
             marginTop: 4,
           }}
         >
@@ -254,7 +254,7 @@ function Footer() {
       >
         {[
           { label: "Instagram", href: "https://instagram.com/robbertsen.art" },
-          { label: "ArtConnect", href: "https://artconnect.com" },
+          { label: "ArtConnect", href: "https://www.artconnect.com/jeroen-robbertsen-k3Zn3QLuC6MHZ8sSMIvcg" },
           { label: "Email", href: "mailto:hello@robbertsen.art" },
         ].map((link) => (
           <a
@@ -335,37 +335,6 @@ function Home() {
             transition: "opacity 1.2s ease 0.2s",
           }}
         />
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <div
-            style={{
-              height: 1,
-              width: loaded ? 60 : 0,
-              background: `linear-gradient(90deg, transparent, ${C.gold}66)`,
-              transition: "width 1.2s ease 0.5s",
-            }}
-          />
-          <span
-            style={{
-              fontSize: 12,
-              fontWeight: 300,
-              letterSpacing: 4,
-              textTransform: "uppercase",
-              color: C.mid,
-              opacity: loaded ? 1 : 0,
-              transition: "opacity 1s ease 0.7s",
-            }}
-          >
-            Contemporary Art
-          </span>
-          <div
-            style={{
-              height: 1,
-              width: loaded ? 60 : 0,
-              background: `linear-gradient(90deg, ${C.gold}66, transparent)`,
-              transition: "width 1.2s ease 0.5s",
-            }}
-          />
-        </div>
       </section>
 
       {/* Gallery Grid */}
@@ -387,7 +356,7 @@ function Home() {
       {/* ArtConnect link */}
       <div style={{ textAlign: "center", padding: "0 24px 40px" }}>
         <a
-          href="https://artconnect.com"
+          href="https://www.artconnect.com/jeroen-robbertsen-k3Zn3QLuC6MHZ8sSMIvcg"
           target="_blank"
           rel="noopener noreferrer"
           style={{
