@@ -20,7 +20,7 @@ const WORKS = [
     year: "2025",
     medium: "Oil paint on paper",
     size: "31 × 41 cm",
-    image: "/images/fire-water-earth.jpg",
+    image: "/images/Robbertsen.art_Fire_lr.jpg",
     accent: C.warm,
   },
   {
@@ -28,7 +28,7 @@ const WORKS = [
     year: "2024",
     medium: "Ink on paper",
     size: "42 × 59.4 cm",
-    image: "/images/creatures-02.jpg",
+    image: "/images/Robbertsen_Creatures_02_lr.jpg",
     accent: C.blue,
   },
   {
@@ -36,7 +36,7 @@ const WORKS = [
     year: "2020",
     medium: "Pencil on paper",
     size: "29.7 × 42 cm",
-    image: "/images/terschelling.jpg",
+    image: "/images/Robbertsen.art_Terschelling_lr.jpg",
     accent: C.purple,
     wide: true,
   },
@@ -45,7 +45,7 @@ const WORKS = [
     year: "2022",
     medium: "Pencil on paper",
     size: "31 × 41 cm",
-    image: "/images/figures-01.jpg",
+    image: "/images/Robbertsen.art_figures-01_lr.jpg",
     accent: C.green,
   },
   {
@@ -53,7 +53,7 @@ const WORKS = [
     year: "2024",
     medium: "Pencil on paper",
     size: "31 × 41 cm",
-    image: "/images/figures-02.jpg",
+    image: "/images/Robbertsen.art_figures-02_lr.jpg",
     accent: C.warm,
   },
   {
@@ -61,7 +61,7 @@ const WORKS = [
     year: "2024",
     medium: "Oil paint on paper",
     size: "31 × 41 cm",
-    image: "/images/forms-00.jpg",
+    image: "/images/Robbertsen.art_Forms-00_lr.jpg",
     accent: C.blue,
   },
   {
@@ -69,7 +69,7 @@ const WORKS = [
     year: "2024",
     medium: "Oil on canvas",
     size: "50 × 70 cm",
-    image: "/images/forms-01.jpg",
+    image: "/images/Robbertsen.art_Forms-01_lr.jpg",
     accent: C.gold,
   },
 ];
@@ -308,7 +308,7 @@ function Home() {
         }}
       >
         <img
-          src="/images/logo-white.png"
+          src="/images/Robbertsen.art_beeldmerk_wit.png"
           alt="Robbertsen Art"
           style={{
             height: 80,
